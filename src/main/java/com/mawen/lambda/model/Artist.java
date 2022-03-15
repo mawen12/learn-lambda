@@ -33,4 +33,12 @@ public class Artist {
     public boolean isFrom(String origin) {
         return Objects.equals(this.origin, origin);
     }
+
+    /**
+     * 获取国籍
+     * @return
+     */
+    public String getNationality() {
+        return origin;
+    }
 }

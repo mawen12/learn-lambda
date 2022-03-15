@@ -20,6 +20,6 @@ public class Album {
     /**
      * 参与创作本专辑的艺术家列表
      */
-    private List<String> musicians;
+    private List<Artist> musicians;
 
 }

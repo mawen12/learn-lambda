@@ -1,6 +1,7 @@
 package com.mawen.lambda.chapter03;
 
 import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.collections.ListUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,7 +20,7 @@ public class StreamMapExample {
                 .map(string -> string.toUpperCase())
                 .collect(Collectors.toList());
 
-        CollectionUtils.isEqualCollection(Arrays.asList("A", "B", "HELLO"), collected);
+        System.out.println(ListUtils.isEqualList(Arrays.asList("A", "B", "HELLO"), collected));
 
         foreachMap();
     }
@@ -31,7 +32,7 @@ public class StreamMapExample {
             collected.add(uppercaseString);
         }
 
-        CollectionUtils.isEqualCollection(Arrays.asList("A", "B", "HELLO"), collected);
+        System.out.println(ListUtils.isEqualList(Arrays.asList("A", "B", "HELLO"), collected));
     }
 
 }
