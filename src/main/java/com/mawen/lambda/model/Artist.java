@@ -1,6 +1,8 @@
 package com.mawen.lambda.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 import java.util.Objects;
@@ -9,6 +11,8 @@ import java.util.Objects;
  * 创作音乐的个人或团队
  */
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Artist {
     /**
      * 艺术家的名字
