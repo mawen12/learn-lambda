@@ -45,4 +45,8 @@ public class Artist {
     public String getNationality() {
         return origin;
     }
+
+    public boolean isSolo() {
+        return members.size() == 1;
+    }
 }

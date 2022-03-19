@@ -26,4 +26,8 @@ public class Album {
      */
     private List<Artist> musicians;
 
+    public Artist getMainMusician() {
+        return musicians.get(0);
+    }
+
 }
