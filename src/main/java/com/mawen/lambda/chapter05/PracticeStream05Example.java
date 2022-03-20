@@ -78,7 +78,7 @@ public class PracticeStream05Example {
         System.out.println(collect);
     }
 
-    // ==================TODO by mawen 改进Map=============================
+    // ==================TODO by mawen 改进Map P85=============================
 
     /**
      * 自定义收集器
