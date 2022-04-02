@@ -1,5 +1,6 @@
 package com.mawen.lambda.chapter03;
 
+import com.google.common.collect.Lists;
 import com.mawen.lambda.model.Album;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
@@ -13,7 +14,7 @@ import java.util.function.Function;
 public class PracticeAdvancedStream03Example {
 
     public static void main(String[] args) {
-        System.out.println(reduceString(List.of("a", "b", "c")));
+        System.out.println(reduceString(Lists.newArrayList("a", "b", "c")));
     }
 
     // TODO by mawen 待优化返回List P33

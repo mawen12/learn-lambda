@@ -1,5 +1,7 @@
 package com.mawen.lambda.chapter06;
 
+import com.google.common.collect.Lists;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collector;
@@ -13,10 +15,10 @@ public class StreamPractise06Example {
     public static void main(String[] args) {
         System.out.println(sequentialSumOfSquares(IntStream.range(0, 5)));
         System.out.println(parallelSumOfSquares(IntStream.range(0, 5)));
-        System.out.println(multiplyThrough(List.of(1, 2, 3)));
-        System.out.println(parallelMultiplyThrough(List.of(1, 2, 3)));
-        System.out.println(slowSumOfSquares(List.of(1, 2, 3)));
-        System.out.println(fastSumOfSquares(List.of(1, 2, 3)));
+        System.out.println(multiplyThrough(Lists.newArrayList(1, 2, 3)));
+        System.out.println(parallelMultiplyThrough(Lists.newArrayList(1, 2, 3)));
+        System.out.println(slowSumOfSquares(Lists.newArrayList(1, 2, 3)));
+        System.out.println(fastSumOfSquares(Lists.newArrayList(1, 2, 3)));
     }
 
     /**

@@ -1,5 +1,6 @@
 package com.mawen.lambda.chapter03;
 
+import com.google.common.collect.Lists;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.ListUtils;
 
@@ -16,11 +17,11 @@ import static java.util.stream.Collectors.toList;
 public class StreamFlatMapExample {
 
     public static void main(String[] args) {
-        List<Integer> together = Stream.of(List.of(1, 2), List.of(3, 4))
+        List<Integer> together = Stream.of(Lists.newArrayList(1, 2), Lists.newArrayList(3, 4))
                 .flatMap(numbers -> numbers.stream())
                 .collect(toList());
 
-        System.out.println(ListUtils.isEqualList(List.of(1,2,3,4), together));
+        System.out.println(ListUtils.isEqualList(Lists.newArrayList(1,2,3,4), together));
 
     }
 

@@ -1,5 +1,6 @@
 package com.mawen.lambda.chapter04;
 
+import com.google.common.collect.Lists;
 import com.mawen.lambda.model.Artist;
 
 import java.util.ArrayList;
@@ -14,13 +15,13 @@ public class PracticeStream04Example {
 
     public static void main(String[] args) {
         Performance performance = new PerformanceImpl("mawen",
-                List.of(new Artist("lucy", List.of("a", "b", "c"), null),
-                        new Artist("jack", List.of("e", "f", "g"), null)));
+                Lists.newArrayList(new Artist("lucy", Lists.newArrayList("a", "b", "c"), null),
+                        new Artist("jack", Lists.newArrayList("e", "f", "g"), null)));
 
         performance.getAllMusicians().forEach(System.out::println);
 
 
-        Artists artists = new Artists(List.of(new Artist("mawen", null, null)));
+        Artists artists = new Artists(Lists.newArrayList(new Artist("mawen", null, null)));
         System.out.println(artists.getArtistName(0));
     }
 
@@ -55,7 +56,7 @@ public class PracticeStream04Example {
 
         @Override
         public Stream<Artist> getMusicians() {
-            return Optional.ofNullable(artists).orElse(List.of()).stream();
+            return Optional.ofNullable(artists).orElse(Lists.newArrayList()).stream();
         }
     }
 

@@ -1,5 +1,6 @@
 package com.mawen.lambda.chapter03;
 
+import com.google.common.collect.Lists;
 import com.mawen.lambda.model.Track;
 
 import java.util.Comparator;
@@ -11,7 +12,7 @@ import java.util.List;
  */
 public class StreamMaxExample {
 
-    private static final List<Track> tracks = List.of(new Track("Bakai", 524),
+    private static final List<Track> tracks = Lists.newArrayList(new Track("Bakai", 524),
             new Track("Violets for your Furs", 378),
             new Track("Time Was", 451));
 

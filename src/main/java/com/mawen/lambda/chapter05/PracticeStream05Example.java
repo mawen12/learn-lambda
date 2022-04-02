@@ -1,5 +1,6 @@
 package com.mawen.lambda.chapter05;
 
+import com.google.common.collect.Lists;
 import com.mawen.lambda.model.Artist;
 
 import java.util.*;
@@ -70,9 +71,9 @@ public class PracticeStream05Example {
     // ==================定制收集器实现Collectors.groupingBy=============================
 
     public static void customCollectGroupBy() {
-        Stream<Artist> names = Stream.of(new Artist("mawen", List.of("a", "b", "c"), "china"),
-                new Artist("Jack", List.of("a", "b", "c"), "china"),
-                new Artist("Jack", List.of("b", "c", "d"), "china"));
+        Stream<Artist> names = Stream.of(new Artist("mawen", Lists.newArrayList("a", "b", "c"), "china"),
+                new Artist("Jack", Lists.newArrayList("a", "b", "c"), "china"),
+                new Artist("Jack", Lists.newArrayList("b", "c", "d"), "china"));
 
         Map<String, List<Artist>> collect = names.collect(new GroupingBy<>(Artist::getName));
         System.out.println(collect);

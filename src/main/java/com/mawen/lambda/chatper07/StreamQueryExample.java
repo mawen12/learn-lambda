@@ -15,7 +15,7 @@ public class StreamQueryExample {
     /**
      * 在数据库中查找艺术家，确保每个线程只做一次这种查询
      */
-    ThreadLocal<Album> thisAlbum = new ThreadLocal<>(){
+    ThreadLocal<Album> thisAlbum = new ThreadLocal<Album>(){
         @Override
         protected Album initialValue() {
             return StreamQueryExample.lookupCurrentAlbum();

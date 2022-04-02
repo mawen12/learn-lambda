@@ -12,10 +12,56 @@
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SuppressionsComponent">
     <option name="suppComments" value="[]" />
+  </component>
+  <component name="UnattendedHostPersistenceState">
+    <option name="openedFilesInfos">
+      <list>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="1113" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/main/java/com/mawen/lambda/chapter03/StreamFilterExample.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="719" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/main/java/com/mawen/lambda/chapter03/StreamFlatMapExample.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="570" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/main/java/com/mawen/lambda/chapter03/StreamMaxExample.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="952" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/main/java/com/mawen/lambda/chapter03/StreamReduceExample.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="528" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/main/java/com/mawen/lambda/chapter04/BaseTypeExample.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="1680" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/main/java/com/mawen/lambda/chapter04/PracticeStream04Example.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="2630" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/main/java/com/mawen/lambda/chapter05/PracticeStream05Example.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="740" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/main/java/com/mawen/lambda/chapter06/StreamPractise06Example.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="419" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/main/java/com/mawen/lambda/chatper07/StreamQueryExample.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="406" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/main/java/com/mawen/lambda/chapter04/OverloadExample.java" />
+        </OpenedFileInfo>
+      </list>
+    </option>
   </component>
 </project>

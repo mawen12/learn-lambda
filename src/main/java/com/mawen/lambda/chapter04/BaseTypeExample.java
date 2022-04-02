@@ -1,5 +1,6 @@
 package com.mawen.lambda.chapter04;
 
+import com.google.common.collect.Lists;
 import com.mawen.lambda.model.Album;
 import com.mawen.lambda.model.Track;
 
@@ -13,10 +14,10 @@ public class BaseTypeExample {
 
     public static void main(String[] args) {
         Album album = new Album("mawen",
-                List.of(new Track("a", 10),
+                Lists.newArrayList(new Track("a", 10),
                         new Track("b", 20),
                         new Track("c", 30)),
-                List.of());
+                Lists.newArrayList());
         printTrackLengthStatistics(album);
     }
 

@@ -13,19 +13,19 @@ public interface OverloadExample extends BinaryOperator<Integer> {
 //        overloadedMethod((x) -> true); // 当IntPredicate未继承Predicate时，就会报错，添加继承可以解决问题
     }
 
-    private static void overloadedMethod(BinaryOperator<Integer> lambda) {
+    public static void overloadedMethod(BinaryOperator<Integer> lambda) {
         System.out.println("BinaryOperator");
     }
 
-    private static void overloadedMethod(IntegerBiFunction lambda) {
+    public static void overloadedMethod(IntegerBiFunction lambda) {
         System.out.println("IntegerBiFunction");
     }
 
-    private static void overloadedMethod(Predicate<Integer> predicate) {
+    public static void overloadedMethod(Predicate<Integer> predicate) {
         System.out.println("Predicate");
     }
 
-    private static void overloadedMethod(IntPredicate predicate) {
+    public static void overloadedMethod(IntPredicate predicate) {
         System.out.println("IntPredicate");
     }
 

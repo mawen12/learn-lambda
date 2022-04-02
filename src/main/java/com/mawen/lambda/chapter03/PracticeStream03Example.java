@@ -1,11 +1,11 @@
 package com.mawen.lambda.chapter03;
 
+import com.google.common.collect.Lists;
 import com.mawen.lambda.model.Album;
 import com.mawen.lambda.model.Artist;
 import com.mawen.lambda.model.Track;
 import org.apache.commons.collections.CollectionUtils;
 
-import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -22,23 +22,23 @@ public class PracticeStream03Example {
     public static void main(String[] args) {
         System.out.println(addUp(Stream.of(1,2,3)));
 
-        List<Artist> artists = List.of(new Artist("mawen", null, "China"));
+        List<Artist> artists = Lists.newArrayList(new Artist("mawen", null, "China"));
         System.out.println(collectNameAndOrigin(artists));
 
-        List<Album> albums = List.of(
-                new Album("mawen", List.of(new Track("a", 30),
+        List<Album> albums = Lists.newArrayList(
+                new Album("mawen", Lists.newArrayList(new Track("a", 30),
                 new Track("b", 40),
                 new Track("c", 50)),
-                List.of()),
-                new Album("jack", List.of(new Track("a", 30),
+                Lists.newArrayList()),
+                new Album("jack", Lists.newArrayList(new Track("a", 30),
                 new Track("c", 50)),
-                List.of()));
+                Lists.newArrayList()));
         System.out.println(gtThreeSongs(albums));
 
         String str = "MaWen";
         System.out.println(countCharOfString(str));
 
-        List<String> list = List.of("Mawen", "Jack", "Luc");
+        List<String> list = Lists.newArrayList("Mawen", "Jack", "Luc");
         System.out.println(minLetter(list));
     }
 

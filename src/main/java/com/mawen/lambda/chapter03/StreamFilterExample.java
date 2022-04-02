@@ -1,6 +1,6 @@
 package com.mawen.lambda.chapter03;
 
-import org.apache.commons.collections.CollectionUtils;
+import com.google.common.collect.Lists;
 import org.apache.commons.collections.ListUtils;
 
 import java.util.ArrayList;
@@ -22,7 +22,7 @@ public class StreamFilterExample {
                 .filter(value -> isDigit(value.charAt(0)))
                 .collect(toList());
 
-        System.out.println(ListUtils.isEqualList(List.of("1abc"), beginningWithNumbers));
+        System.out.println(ListUtils.isEqualList(Lists.newArrayList("1abc"), beginningWithNumbers));
 
         foreachFilter();
     }
@@ -35,6 +35,6 @@ public class StreamFilterExample {
             }
         }
 
-        System.out.println(ListUtils.isEqualList(List.of("1abc"), beginningWithNumbers));
+        System.out.println(ListUtils.isEqualList(Lists.newArrayList("1abc"), beginningWithNumbers));
     }
 }

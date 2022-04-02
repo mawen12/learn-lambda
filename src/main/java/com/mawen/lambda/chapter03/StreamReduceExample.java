@@ -1,5 +1,7 @@
 package com.mawen.lambda.chapter03;
 
+import com.google.common.collect.Lists;
+
 import java.util.List;
 import java.util.function.BinaryOperator;
 import java.util.stream.Stream;
@@ -33,7 +35,7 @@ public class StreamReduceExample {
 
     private static void foreachReduce() {
         int acc = 0;
-        for (Integer element : List.of(1, 2, 3)) {
+        for (Integer element : Lists.newArrayList(1, 2, 3)) {
             acc = acc + element;
         }
 
